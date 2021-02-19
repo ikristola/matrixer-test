@@ -1,6 +1,5 @@
-package matrixerprototype;
+package matrixertest;
 
-import matrixerprototype.SimpleCalculations;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -18,8 +17,13 @@ public class SimpleCalculationsTest {
     @Test
     void subtraction() {
         assertEquals(0, simpleClass.subtraction(1, 1));
-        assertTrue(simpleClass.subtraction(1, 2) >= 0);
-        assertTrue(simpleClass.subtraction(2, 1) >= 0);
+        assertEquals(-1, simpleClass.subtraction(1, 2));
+        assertEquals(1, simpleClass.subtraction(2, 1));
+    }
+
+    @Test
+    void multiplication() {
+        assertEquals(1, simpleClass.multiplication(1, 1));
     }
 
     @Test
@@ -27,8 +31,10 @@ public class SimpleCalculationsTest {
         simpleClass.saveSomeText();
     }
 
-//    @Test
-//    void multiplication() {
-//        assertEquals(1, simpleClass.multiplication(1, 1));
-//    }
+    @Test
+    void callMultipleFunctions() {
+        assertEquals(0, simpleClass.subtraction(1, 1));
+        assertEquals(2, simpleClass.addition(1, 1));
+    }
+
 }
