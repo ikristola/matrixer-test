@@ -1,13 +1,12 @@
-package matrixertest;
+package org.matrixertest.calculator;
 
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class SimpleCalculationsTest {
+public class CalculatorTest {
 
-    private final SimpleCalculations simpleClass = new SimpleCalculations();
+    private final Calculator simpleClass = new Calculator();
 
     @Test
     void addition() {
@@ -24,11 +23,6 @@ public class SimpleCalculationsTest {
     @Test
     void multiplication() {
         assertEquals(1, simpleClass.multiplication(1, 1));
-    }
-
-    @Test
-    void testSaveText() {
-        simpleClass.saveSomeText();
     }
 
     @Test
