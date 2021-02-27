@@ -15,6 +15,7 @@ dependencies {
 }
 
 test {
+//	jvmArgs "-javaagent:/Users/macbookpro/programming/skola/vt21-applied/code/matrixer/app/build/libs/agentJar.jar=arg1:org.matrixertest"
     useJUnitPlatform()
     testLogging {
         events 'passed', 'skipped', 'failed'  // Events to print out
