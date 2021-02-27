@@ -12,6 +12,7 @@ public class App {
 
 
     public static void main(String[] args) {
+        System.out.println("Running app");
         App app = new App();
         app.run();
     }
